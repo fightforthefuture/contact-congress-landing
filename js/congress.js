@@ -17,7 +17,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     data.append('email', email);
     data.append('org', org);
 
-    var url = 'http://mothership.dev/congress/signup';
+    var url = 'https://mothership.fightforthefuture.org/congress/signup';
 
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {

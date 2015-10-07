@@ -72,7 +72,7 @@ form {
     padding: 15px;
     max-width: 1080px;
     margin: 0px auto 0px auto;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 form input {
     width: 100%;
@@ -122,6 +122,7 @@ h3 img {
 }
 section {
     padding: 0px 15px;
+    padding: 50px 15px 30px 15px;
 }
 section i {
     font-family: "brandon-grotesque";
@@ -143,9 +144,72 @@ section p, footer p {
     font-weight: 300;
     margin: 0px auto 50px auto;
 }
-footer {
+section:nth-child(even) {
     background: #f8fafb;
-    padding: 50px 15px 80px 15px;
+    
+}
+ul.pricing {
+    margin-bottom: 40px;
+}
+ul.pricing li {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    margin: 0px auto 10px auto;
+    max-width: 550px;
+    height: 65px;
+    border: 1px solid #d8e1e6;
+    border-radius: 7px;
+    background: #f8fafb;
+}
+ul.pricing li > div:first-child {
+    display: inline-block;
+    padding: 0px 15px;
+    background: #597787;
+    line-height: 63px;
+    width: 120px;
+    color: white;
+    font-family: "brandon-grotesque";
+    font-size: 25px;
+    font-weight: 400;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+ul.pricing li > div:last-child > div {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+ul.pricing li > div:last-child > div > div {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 1rem;
+    font-family: "brandon-grotesque";
+    text-transform: uppercase;
+    color: #3a484e;
+}
+ul.pricing li div span {
+    font-size: 15px;
+}
+.btn {
+    display: inline-block;
+    background: #3fafee;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 7px;
+}
+footer {
+    /*
+    
+    */
 }
 footer p {
     color: #627498;
